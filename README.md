@@ -1,0 +1,1 @@
+# Шаблон vite + three.js
