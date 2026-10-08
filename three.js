@@ -5,7 +5,7 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 import GUI from "lil-gui";
 
-const MODEL_URL = "/models/rubik.glb";
+const MODEL_URL = `${import.meta.env.BASE_URL}models/rubik.glb`;
 
 const MATERIALS = {
   Cube_Purple: { color: 0x6a33f0, roughness: 0.34, noise: true },
