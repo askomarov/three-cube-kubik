@@ -1,4 +1,4 @@
-import glsl from 'vite-plugin-glsl';
+import { resolve } from 'node:path';
 
 export default {
   base: './',
@@ -7,5 +7,12 @@ export default {
     port: 3000,
     open: true,
   },
-  plugins: [glsl()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        demo: resolve(__dirname, 'demo.html'),
+      },
+    },
+  },
 };
